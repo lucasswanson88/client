@@ -1,2 +1,7 @@
 <div>Welcome to LucasWeb.Azurewebsites.net!</div>
-<app-login></app-login><!-- displays login component-->
+<!-- <app-login></app-login>displays login component -->
+<div *ngFor="let trainer of trainerList">
+    <app-trainer [trainer]="trainer">
+        
+    </app-trainer>
+</div>
